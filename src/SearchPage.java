@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginPage  extends JFrame implements ActionListener {
+public class SearchPage  extends JFrame implements ActionListener {
 
     Catalog catalog;
     Container container;
@@ -13,7 +13,7 @@ public class LoginPage  extends JFrame implements ActionListener {
     JTextField usernameTextField;
     JButton loginButton;
     JButton resetButton;
-    public LoginPage(Catalog catalog) {
+    public SearchPage(Catalog catalog) {
 
         this.catalog = catalog;
         initializeAndSetComponents();
@@ -24,7 +24,7 @@ public class LoginPage  extends JFrame implements ActionListener {
 
     public void setGenericSettings() {
         setVisible(true);
-        setTitle("Login Page");
+        setTitle("Search Page");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(10, 10, 800, 550);
         setResizable(false);
@@ -45,7 +45,7 @@ public class LoginPage  extends JFrame implements ActionListener {
         usernameTextField = new JTextField();
         usernameTextField.setBounds(350, 220, 150, 30);
 
-        loginButton = new JButton("LOGIN");
+        loginButton = new JButton("SEARCH");
         resetButton = new JButton("RESET");
         loginButton.setBounds(250, 300, 100, 30);
         resetButton.setBounds(400, 300, 100, 30);

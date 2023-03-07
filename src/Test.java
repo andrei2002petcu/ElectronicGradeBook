@@ -3,13 +3,12 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
 public class Test {
-    public static void main(String args[]) throws IOException, ParseException, CloneNotSupportedException {
+    public static void main(String[] args) throws IOException, ParseException, CloneNotSupportedException {
 
         Catalog catalog = Catalog.getInstance();
 
@@ -221,6 +220,6 @@ public class Test {
         System.out.println("Dupa undo: \n" + catalog.courses.get(0).getSnapshot());
 
         //GUI
-        LoginPage loginPage = new LoginPage(catalog);
+        SearchPage loginPage = new SearchPage(catalog);
     }
 }
