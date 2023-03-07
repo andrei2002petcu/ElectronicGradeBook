@@ -13,5 +13,7 @@ The core classes of the application are:
 * `Course`, the most important class of the project. It contains all the information related to the course: teacher, assistants, students, grades, promotion condition, course strategy and more
 * `User`, class that constructs each user (Student, Parent, Assistant, Teacher), using the **Factory Design Pattern**
 
+The input data of the Catalog is read by parsing a JSON file using *JSON Simple Java Toolkit*
+
 ![Screenshot_1](https://user-images.githubusercontent.com/94044661/223537775-d86bdf3d-74c0-4174-9e71-47714967feb5.png)
 ![Screenshot_2](https://user-images.githubusercontent.com/94044661/223537792-1a74ab91-ee12-40e0-9736-3f3ba52067e4.png)
